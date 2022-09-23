@@ -1,0 +1,122 @@
+.footer {
+  margin: 0 auto;
+  text-align: center;
+
+  &__inner {
+    display: flex;
+    @include bg-dark;
+    box-sizing: border-box;
+    max-width: 1440px;
+    width: 100%;
+    padding: 24px 0;
+    margin-top: 150px;
+  }
+
+  &__menu {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__menu-inner {
+    align-items: center;
+    display: flex;
+  }
+  &__logo {
+    margin-right: 7px;
+  }
+
+  &__list {
+    display: flex;
+    // max-width: 309px;
+    // width: 100%;
+    // justify-content: space-between;
+  }
+
+  &__list-item {
+    margin-left: 42px;
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    @include light;
+  }
+
+  &__img-link {
+    margin-right: 15px;
+  }
+}
+@media only screen and (max-width: 1111px) and (min-width: 768px) {
+  .footer {
+    &__inner {
+      display: flex;
+      @include bg-dark;
+      width: 100%;
+      max-width: 1111px;
+      width: 100%;
+      padding: 33px 0;
+      margin-top: 150px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  .footer {
+    &__inner {
+      display: flex;
+      @include bg-dark;
+
+      width: 100%;
+      padding: 33px 0;
+      margin-top: 150px;
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .footer {
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      @include bg-dark;
+      width: 100%;
+      padding: 33px 0;
+      margin: 0 auto;
+      padding: 0;
+    }
+    &__menu-inner {
+      flex-direction: column;
+      // margin-top: 40px;
+    }
+
+    &__logo {
+      margin-bottom: 40px;
+    }
+
+    &__list {
+      justify-content: center;
+      margin: 0 auto 40px;
+      flex-direction: column;
+      // margin-bottom: 40px;
+    }
+
+    &__list-item {
+      margin-bottom: 32px;
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin: 0 auto 32px;
+      color: #ffffff;
+    }
+    &__img-link {
+      justify-content: space-between;
+    }
+  }
+}

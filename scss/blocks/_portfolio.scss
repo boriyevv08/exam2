@@ -1,0 +1,244 @@
+.portfolio {
+  max-width: 1111px;
+  width: 100%;
+  margin-top: 105px;
+  display: flex;
+  justify-content: space-between;
+
+  &__p-content {
+    // display: flex;
+    justify-content: flex-end;
+  }
+
+  &__line {
+    display: block;
+    width: 350px;
+    height: 1px;
+    background-color: #33323d;
+    mix-blend-mode: normal;
+    opacity: 0.15;
+  }
+
+  &__title {
+    width: 350px;
+    height: 42px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-family: "Ibarra Real Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 105%;
+
+    letter-spacing: -0.357143px;
+
+    color: #33323d;
+  }
+
+  &__text {
+    width: 350px;
+    font-family: "Public Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 188%;
+    color: #33323d;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  &__link {
+    margin-top: 24px;
+    display: block;
+    max-width: 202px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 17px 32px;
+    margin-bottom: 103px;
+    border: 1px solid #33323d;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #33323d;
+  }
+}
+
+.portfolio:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+
+.portfolio:nth-child(4) {
+  flex-direction: row-reverse;
+}
+
+
+@media only screen and (max-width: 1111px) and (min-width: 768px) {
+  .portfolio {
+    max-width: 768px;
+    width: 100%;
+    margin-top: 105px;
+    display: flex;
+
+    &__p-content:nth-child(2) {
+      margin-right: 79px;
+    }
+    &__p-content:nth-child(4) {
+      margin-right: 79px;
+    }
+
+    &__line {
+      display: block;
+      width: 339px;
+    }
+
+    &__title {
+      width: 339px;
+    }
+    &__text {
+      width: 339px;
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 200%;
+      color: #33323d;
+
+      mix-blend-mode: normal;
+      opacity: 0.8;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 678px) {
+  .portfolio {
+    max-width: 768px;
+    width: 100%;
+    margin-top: 105px;
+    display: flex;
+
+    &__content {
+      margin-left: 19px;
+    }
+   
+
+    &__line {
+      display: block;
+      width: 281px;
+    }
+
+    &__link {
+      width: 202px;
+      padding: 17px 36px;
+    }
+
+    &__title {
+      width: 239px;
+    }
+    &__text {
+      width: 281px;
+      height: auto;
+      margin-bottom: 24px;
+    }
+  }
+  .co-working {
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+
+    &__text-wrapper {
+      display: flex;
+      max-width: 350px;
+      width: 100%;
+    }
+
+    &__offer {
+      font-family: "Ibarra Real Nova";
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 105%;
+      letter-spacing: -0.357143px;
+      color: #33323d;
+    }
+
+    &__line {
+      height: 1px;
+      max-width: 113px;
+      width: 100%;
+      margin-top: 34px;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 375px) {
+  .portfolio {
+    display: block;
+    max-width: 576px;
+    width: 100%;
+    margin-top: 76px;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    &__p-content {
+      display: block;
+      margin-left: 5px;
+    }
+    &__p-content:nth-child(2) {
+      display: block;
+      // margin-right: 5px;
+      flex-direction: column-reverse;
+    }
+    &__p-content:nth-child(4) {
+      display: block;
+      // margin-right: 5px;\
+      flex-direction: column-reverse;
+    }
+
+    &__line {
+      display: block;
+      width: 239px;
+      margin-top: 8px;
+    }
+
+    &__title {
+      width: 239px;
+    }
+    &__text {
+      width: 311px;
+      margin-left: 0;
+      margin-bottom: 24px;
+    }
+    .about-picture {
+      display: block;
+    }
+  }
+  .co-working {
+    flex-direction: column;
+    max-width: 576px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 50px;
+
+    &__text-wrapper {
+      display: flex;
+      text-align: center;
+      max-width: 311px;
+      width: 100%;
+    }
+
+    &__line {
+      height: 1px;
+      max-width: 311px;
+      width: 100%;
+      margin-top: 24px;
+    }
+  }
+}

@@ -1,0 +1,172 @@
+.contact-line {
+  display: block;
+  width: 1110px;
+  height: 1px;
+  margin-top: 103px;
+  margin-bottom: 48px;
+
+  background-color: #33323d;
+  mix-blend-mode: normal;
+  opacity: 0.15;
+}
+.contact-line-bottom {
+  display: block;
+  width: 1110px;
+  height: 1px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+
+  background-color: #33323d;
+  mix-blend-mode: normal;
+  opacity: 0.15;
+}
+
+.main {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    width: 350px;
+    font-family: "Ibarra Real Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 105%;
+
+    letter-spacing: -0.357143px;
+
+    color: #33323d;
+  }
+
+  &__text {
+    width: 635px;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 188%;
+
+    color: #33323d;
+
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+}
+
+.icons {
+  margin-top: 24px;
+}
+.contact-icons {
+  margin-right: 16px;
+}
+
+.contact-icons:nth-child(3) {
+  margin-right: 0px;
+}
+
+// inputs start
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input__title {
+  font-family: "Ibarra Real Nova";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 105%;
+  letter-spacing: -0.357143px;
+  color: #33323d;
+}
+
+.form-inputs {
+  margin-bottom: 24px;
+}
+
+.form-inputs > input,
+label,
+#text {
+  width: 635px;
+}
+
+.form-inputs > input {
+  background-color: silver;
+  padding: 9px 0 9px 16px;
+  border: 0 transparent;
+}
+
+.form-inputs > textarea {
+  background-color: silver;
+  border: 0 transparent;
+  padding: 9px 0 9px 16px;
+}
+
+.name-label {
+  display: block;
+  font-family: "Public Sans";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 231%;
+  color: #33323d;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.contact-btn {
+  padding: 17px 24px;
+  font-family: "Public Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  border: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #203a4c;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  .main {
+    &__inner {
+      display: block;
+    }
+  }
+
+  .input-wrapper {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 375px) {
+  .main {
+    &__inner {
+      display: block;
+    }
+
+    &__text {
+      width: 310px;
+    }
+  }
+
+  .input-wrapper {
+    display: block;
+  }
+
+  .form-inputs > input,
+  label,
+  #text {
+    width: 310px;
+  }
+
+  .contact-line {
+    width: 310px;
+  }
+
+  .contact-line-bottom {
+    width: 310px;
+  }
+}

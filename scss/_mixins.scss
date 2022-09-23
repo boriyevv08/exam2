@@ -1,0 +1,40 @@
+@mixin green{
+   color: #5FB4A2 ;
+}
+@mixin bg-green{
+   background-color: #5FB4A2 ;
+}
+
+@mixin blue{
+   color: #203A4C;
+}
+
+@mixin bg-blue{
+   background-color: #203A4C;
+}
+@mixin dark {
+   color: #33323D;
+}
+
+@mixin bg-dark {
+   background-color: #33323D;
+}
+
+@mixin red{
+   color: #F43030;
+}
+
+@mixin light{
+   color: #FAFAFA;
+}
+@mixin bg-light{
+   background-color: #FAFAFA;
+}n bg-light{
+   background-color: #FAFAFA;
+}
+
+
+@mixin grey{
+   color: #FAFAFB;
+}
+
